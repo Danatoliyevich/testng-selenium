@@ -25,42 +25,42 @@ public class Test2 {
         registrPage.userInput("llogin");
         registrPage.clickCommitBtn();
         registrPage.takeScreenshot(driver);
-        Assert.assertEquals(registrPage.isErrorUserDisplayed(), true);}
+        Assert.assertEquals(registrPage.isErrorUserDisplayed(), false);}
 
     @Test(priority=1)
     public static void tinputPasswd() {
         registrPage.inputPasswd("ppasswd");
         registrPage.clickCommitBtn();
         registrPage.takeScreenshot(driver);
-        Assert.assertEquals(registrPage.isErrorPassDisplayed(), true);}
+        Assert.assertEquals(registrPage.isErrorPassDisplayed(), false);}
 
     @Test(priority=2)
     public static void tinputAccept() {
         registrPage.inputAccept("ppasswd");
         registrPage.clickCommitBtn();
         registrPage.takeScreenshot(driver);
-        Assert.assertEquals(registrPage.isErrorPassRepDisplayed(), true);}
+        Assert.assertEquals(registrPage.isErrorPassRepDisplayed(), false);}
 
     @Test(priority=3)
     public static void tinputName() {
         registrPage.inputName("Petr");
         registrPage.clickCommitBtn();
         registrPage.takeScreenshot(driver);
-        Assert.assertEquals(registrPage.isErrorNameDisplayed(), true);}
+        Assert.assertEquals(registrPage.isErrorNameDisplayed(), false);}
 
     @Test(priority=4)
     public static void tinputSername() {
         registrPage.inputSername("Petrov");
         registrPage.clickCommitBtn();
         registrPage.takeScreenshot(driver);
-        Assert.assertEquals(registrPage.isErrorSernameDisplayed(), true);}
+        Assert.assertEquals(registrPage.isErrorSernameDisplayed(), false);}
 
     @Test(priority=5)
     public static void tinputEmail() {
         registrPage.inputEmail("tryfguhi@gmail.com");
         registrPage.clickCommitBtn();
         registrPage.takeScreenshot(driver);
-        Assert.assertEquals(registrPage.isErrorEmailDisplayed(), true);}
+        Assert.assertEquals(registrPage.isErrorEmailDisplayed(), false);}
 
         @AfterTest
     public static void teardown() {
